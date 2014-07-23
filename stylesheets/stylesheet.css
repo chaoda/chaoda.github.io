@@ -13,8 +13,9 @@ body {
   font-size: 15px;
   font-family: '微软雅黑' Microsoft YaHei, Arial, serif;
   font-weight: 400;
-  min-width: 960px;
-  padding: 0 20px 20px 20px;
+  min-width: 560px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 a {
@@ -24,7 +25,7 @@ a {
 }
 
 #header {
-  padding-top: 40px;
+  padding-top: 20px;
   border-bottom: solid 1px #275da1;
 }
 
@@ -39,6 +40,7 @@ a {
   position: relative;
   left: 20px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .menu {
@@ -57,12 +59,17 @@ a {
 .menu > ul > li {
   float: left;
   width: 100px;
+  border-left: 1px solid #FFF;
+}
+
+.menu > ul > li:first-child {
+	border-left: 0;
 }
 
 .menu > ul > li:first-child a {
  color: #FFF;
+ background-color: #7a7e80;
 }
-
 
 .menu > ul > li > a {
   display: block;
@@ -72,9 +79,11 @@ a {
 .menu > ul > li a:HOVER, 
 .menu > ul > li a:ACTIVE {
   color: #FFF;
+  background-color: #7a7e80;
 }
 
 .childcontent {
+  z-index: 1;
   margin-top: 8px;
   width: 150px;
   background: #6c7072;
@@ -114,11 +123,22 @@ a {
 }
 
 #content-wrapper {
-	background-color: #FFFFFF;
-	height: 480px;
-	
+  background-color: #FFFFFF;
+  height: 900px;
 }
 
 .display {display: none;}
 
-.white {color: #FFF;}
+.white {color: #FFF; background-color: #7a7e80;}
+
+#content-imgs {margin: 20px 25px;float: left;width:950px;height:400px;overflow:hidden;position:relative;}
+#content-imgs img {border:0;width: 950px;height: 400px;}
+#content-imgs ul{width: 100%;height: 100%;position:absolute;}
+#content-imgs ul li{float:left;width: 950px;height: 400px;overflow:hidden;position:relative;background:#000;}
+#content-imgs ul li div{position:absolute;overflow:hidden;}
+#content-imgs .btnBg{position:absolute;width:950px;height:20px;left:0;bottom:0;background:#000;}
+#content-imgs .btn{position:absolute;width:780px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
+#content-imgs .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
+#content-imgs .btn span.on{background:#fff;}
+#content-imgs .pre{left:0;}
+#content-imgs .next{right:0;background-position:right top;}
