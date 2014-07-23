@@ -7,11 +7,9 @@
 	<meta name="keywords" content="常熟市超达商业设备厂，超市货架附件，促销台，手推车，展示架，挂勾，塑料件">
 	<title>常熟超达商业设备厂</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> 
 </head>
 <body>
-	<header>
+	<div id="header">
 		<div class="inner"><h1>常熟超达商业设备厂</h1></div>
 		<div class="menu">
 			<ul>
@@ -20,36 +18,57 @@
 				</li>
 				<li>
 					<a id="menu102">产品展示</a>
-					<div class="childcontent">
+					<div class="childcontent display">
 						<ul>
-							<li><a>单线拉钩类</a></li>
-							<li><a>双线拉钩类</a></li>
-							<li><a>货架配件类</a></li>
-							<li><a>平价台类</a></li>
-							<li><a>网篮类</a></li>
-							<li><a>手推车类</a></li>
+							<li><a id="menu112">单线拉钩类</a></li>
+							<li><a id="menu122">双线拉钩类</a></li>
+							<li><a id="menu132">货架配件类</a></li>
+							<li><a id="menu142">平价台类</a></li>
+							<li><a id="menu152">网篮类</a></li>
+							<li><a id="menu162">手推车类</a></li>
 						</ul>
 					</div>
 				</li>
 				<li>
 					<a id="menu103">关于我们</a>
-					<div class="childcontent">
-                                                <ul>
-                                                        <li><a>公司简介</a></li>
-                                                        <li><a>经营理念</a></li>
-                                                </ul>
-                                        </div>
-
+					<div class="childcontent display">
+						<ul>
+							<li><a id="menu113">公司简介</a></li>
+							<li><a id="menu123">经营理念</a></li>
+						</ul>
+					</div>
 				</li>
-				<li><a id="menu10t">联系我们</a></li>
+				<li><a id="menu104">联系我们</a></li>
 			</ul>
 		</div>
-	</header>
-	<div id="content-wrapper">
-
 	</div>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-49141622-2', 'auto'); ga('send', 'pageview');
+	
+	<div id="content-wrapper">
+	
+	</div>
+	
+	<script type="text/javascript" src="javascripts/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".menu>ul>li").mouseover(function() {
+				if ($(this).find(".childcontent") != null) {
+					$(this).find(".childcontent").removeClass("display");
+					$(this).find("a:first").addClass("white");
+				}
+			});
+			
+			$(".menu>ul>li").mouseleave(function() {
+				if ($(this).find(".childcontent") != null) {
+					$(this).find(".childcontent").addClass("display");
+					$(this).find("a:first").removeClass("white");
+				}
+			});
+			
+		});
+	
 	</script>
-  </body>
+	<!-- <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-49141622-2', 'auto'); ga('send', 'pageview');
+	</script> -->
+</body>
 </html>

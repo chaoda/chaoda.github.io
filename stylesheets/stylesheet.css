@@ -3,30 +3,37 @@
   padding: 0;
   border: 0;
 }
-/* LAYOUT STYLES */
-body {
-  font-size: 15px;
-  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: '微软雅黑' Microsoft YaHei, Arial, serif;
-  font-weight: 400;
-  color: #666;
-  min-width: 960px;
-  padding: 0 20px;
+
+html {
+  background-image: url('../images/body-bg.jpg');
+  background-position: center top;
 }
 
-header {
+body {
+  font-size: 15px;
+  font-family: '微软雅黑' Microsoft YaHei, Arial, serif;
+  font-weight: 400;
+  min-width: 960px;
+  padding: 0 20px 20px 20px;
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#header {
   padding-top: 40px;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
 
-header h1 {
+#header h1 {
   font-size: 24pt;
-  color: #fff;
+  color: #000000;
   margin-bottom: 0.2em;
   width: 540px;
 }
-
 
 .inner {
   position: relative;
@@ -35,14 +42,10 @@ header h1 {
 }
 
 .menu {
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   position: relative;
-  left: 20px;
   height: 30px;
   line-height: 30px;
-}
-
-.menu a {
-  color: #FFF;
 }
 
 .menu > ul {
@@ -51,28 +54,29 @@ header h1 {
   list-style: none;
 }
 
-.menu > ul li {
+.menu > ul > li {
   float: left;
-  margin-left: 30px;
+  width: 100px;
 }
 
-.menu > ul li:first-child {
-  margin-left: 0;
+.menu > ul > li:first-child a {
+ color: #FFF;
 }
 
-.menu > ul a {
-  color: #000;
-  cursor: pointer;
+
+.menu > ul > li > a {
+  display: block;
+  text-align: center;
 }
 
-.menu ul li a:hover, 
-.menu ul li  a:active {
+.menu > ul > li a:HOVER, 
+.menu > ul > li a:ACTIVE {
   color: #FFF;
 }
 
 .childcontent {
-  margin-top: 10px;
-  width: 220px;
+  margin-top: 8px;
+  width: 150px;
   background: #6c7072;
   position: absolute;
 }
@@ -83,16 +87,38 @@ header h1 {
   display: block;
   height: 8px;
   margin-top: -8px;
-  width: 27px;
 }
 
-.childcontent ul {
+.childcontent > ul {
   height: 100%;
 }
 
-.childcontent ul li {
-  padding-left: 10px;
-  width: 100%;
+.childcontent > ul > li {
+  border-top: 1px solid #7a7e80;
   margin: 0;
   list-style: none;
 }
+
+.childcontent > ul > li a {
+	font-weight: bold;
+	margin-left: 10px;
+	color: #dadada;
+}
+
+.childcontent > ul > li:HOVER {
+	padding-left: 20px;
+}
+
+.childcontent > ul > li:HOVER > a {
+	color: #FFF;
+}
+
+#content-wrapper {
+	background-color: #FFFFFF;
+	height: 480px;
+	
+}
+
+.display {display: none;}
+
+.white {color: #FFF;}
