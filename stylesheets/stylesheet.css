@@ -83,6 +83,7 @@ a {
 }
 
 .childcontent {
+  z-index: 1;
   margin-top: 8px;
   width: 150px;
   background: #6c7072;
