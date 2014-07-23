@@ -3,46 +3,56 @@
   padding: 0;
   border: 0;
 }
-/* LAYOUT STYLES */
-body {
-  font-size: 15px;
-  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: '微软雅黑' Microsoft YaHei, Arial, serif;
-  font-weight: 400;
-  color: #666;
-  min-width: 960px;
-  padding: 0 20px;
+
+html {
+  background-image: url('../images/body-bg.jpg');
+  background-position: center top;
 }
 
-header {
-  padding-top: 40px;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+body {
+  font-size: 15px;
+  font-family: '微软雅黑' Microsoft YaHei, Arial, serif;
+  font-weight: 400;
+  min-width: 560px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 14pt;
+  border-bottom: 2px solid #000;
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#header {
+  padding-top: 20px;
   border-bottom: solid 1px #275da1;
 }
 
-header h1 {
+#header h1 {
   font-size: 24pt;
-  color: #fff;
+  color: #000000;
   margin-bottom: 0.2em;
   width: 540px;
 }
-
 
 .inner {
   position: relative;
   left: 20px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .menu {
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   position: relative;
-  left: 20px;
   height: 30px;
   line-height: 30px;
-}
-
-.menu a {
-  color: #FFF;
 }
 
 .menu > ul {
@@ -51,28 +61,36 @@ header h1 {
   list-style: none;
 }
 
-.menu > ul li {
+.menu > ul > li {
   float: left;
-  margin-left: 30px;
+  width: 100px;
+  border-left: 1px solid #FFF;
 }
 
-.menu > ul li:first-child {
-  margin-left: 0;
+.menu > ul > li:first-child {
+	border-left: 0;
 }
 
-.menu > ul a {
-  color: #000;
-  cursor: pointer;
+.menu > ul > li:first-child a {
+ color: #FFF;
+ background-color: #7a7e80;
 }
 
-.menu ul li a:hover, 
-.menu ul li  a:active {
+.menu > ul > li > a {
+  display: block;
+  text-align: center;
+}
+
+.menu > ul > li a:HOVER, 
+.menu > ul > li a:ACTIVE {
   color: #FFF;
+  background-color: #7a7e80;
 }
 
 .childcontent {
-  margin-top: 10px;
-  width: 220px;
+  z-index: 1;
+  margin-top: 8px;
+  width: 150px;
   background: #6c7072;
   position: absolute;
 }
@@ -83,16 +101,109 @@ header h1 {
   display: block;
   height: 8px;
   margin-top: -8px;
-  width: 27px;
 }
 
-.childcontent ul {
+.childcontent > ul {
   height: 100%;
 }
 
-.childcontent ul li {
-  padding-left: 10px;
-  width: 100%;
+.childcontent > ul > li {
+  border-top: 1px solid #7a7e80;
   margin: 0;
   list-style: none;
+}
+
+.childcontent > ul > li a {
+	font-weight: bold;
+	margin-left: 10px;
+	color: #dadada;
+}
+
+.childcontent > ul > li:HOVER {
+	padding-left: 20px;
+}
+
+.childcontent > ul > li:HOVER > a {
+	color: #FFF;
+}
+
+#content-wrapper {
+  background-color: #FFFFFF;
+  height: 700px;
+}
+
+.display {display: none;}
+
+.white {color: #FFF; background-color: #7a7e80;}
+
+#content-imgs {margin: 20px 25px;float: left;width:950px;height:400px;overflow:hidden;position:relative;}
+#content-imgs img {border:0;width: 950px;height: 400px;}
+#content-imgs ul{width: 100%;height: 100%;position:absolute;}
+#content-imgs ul li{float:left;width: 950px;height: 400px;overflow:hidden;position:relative;background:#000;}
+#content-imgs ul li div{position:absolute;overflow:hidden;}
+#content-imgs .btnBg{position:absolute;width:950px;height:20px;left:0;bottom:0;background:#000;}
+#content-imgs .btn{position:absolute;width:780px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
+#content-imgs .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
+#content-imgs .btn span.on{background:#fff;}
+#content-imgs .pre{left:0;}
+#content-imgs .next{right:0;background-position:right top;}
+
+
+#content-info {
+  float: left;
+  margin: 0 25px;
+}
+
+#content-company {
+  width: 75%;
+  float: left;
+}
+
+#content-company h2:after {
+  background: transparent url('../images/more.gif') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 13px;
+  width: 38px;
+  float: right;
+  margin-top: 5px;
+}
+
+#content-company div {
+  margin: 15px 10px 0 0;
+  line-height: 18px;
+}
+
+#content-company div:before {
+  background: transparent url('../images/company.jpg') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 160px;
+  width: 300px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+#content-company div p {
+  text-indent: 2em;
+}
+
+#content-other {
+  float: right;
+  width: 18%;
+}
+
+#content-other div {
+  margin: 15px 10px 0 0;
+  line-height: 18pt;	
+}
+
+#content-other > div a {
+  color: blue;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+#content-product {
+  float: left;
 }
