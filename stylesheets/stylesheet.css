@@ -18,6 +18,11 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 14pt;
+  border-bottom: 2px solid #000;
+}
+
 a {
   color: #000;
   font-weight: bold;
@@ -124,7 +129,7 @@ a {
 
 #content-wrapper {
   background-color: #FFFFFF;
-  height: 900px;
+  height: 700px;
 }
 
 .display {display: none;}
@@ -142,3 +147,63 @@ a {
 #content-imgs .btn span.on{background:#fff;}
 #content-imgs .pre{left:0;}
 #content-imgs .next{right:0;background-position:right top;}
+
+
+#content-info {
+  float: left;
+  margin: 0 25px;
+}
+
+#content-company {
+  width: 75%;
+  float: left;
+}
+
+#content-company h2:after {
+  background: transparent url('../images/more.gif') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 13px;
+  width: 38px;
+  float: right;
+  margin-top: 5px;
+}
+
+#content-company div {
+  margin: 15px 10px 0 0;
+  line-height: 18px;
+}
+
+#content-company div:before {
+  background: transparent url('../images/company.jpg') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 160px;
+  width: 300px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+#content-company div p {
+  text-indent: 2em;
+}
+
+#content-other {
+  float: right;
+  width: 18%;
+}
+
+#content-other div {
+  margin: 15px 10px 0 0;
+  line-height: 18pt;	
+}
+
+#content-other > div a {
+  color: blue;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+#content-product {
+  float: left;
+}
