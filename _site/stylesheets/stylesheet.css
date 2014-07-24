@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,6 +7,8 @@
 html {
   background-image: url('../images/body-bg.jpg');
   background-position: center top;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -18,6 +20,12 @@ body {
   margin: 0 auto;
 }
 
+iframe {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
 h2 {
   font-size: 14pt;
   border-bottom: 2px solid #000;
@@ -26,12 +34,19 @@ h2 {
 a {
   color: #000;
   font-weight: bold;
+  text-decoration: none;
   cursor: pointer;
 }
 
 #header {
+  height: 110px;
+  background: url(../images/header-bg.png) repeat-x;
   padding-top: 20px;
   border-bottom: solid 1px #275da1;
+}
+
+#header div:first-child {
+  height: 55px;
 }
 
 #header h1 {
@@ -43,16 +58,15 @@ a {
 
 .inner {
   position: relative;
-  left: 20px;
+  text-indent: 2em;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
 .menu {
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   position: relative;
-  height: 30px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .menu > ul {
@@ -63,6 +77,7 @@ a {
 
 .menu > ul > li {
   float: left;
+  height: 100%;
   width: 100px;
   border-left: 1px solid #FFF;
 }
@@ -129,14 +144,15 @@ a {
 
 #content-wrapper {
   background-color: #FFFFFF;
-  height: 700px;
+  padding: 0 25px;
+  float: left;
 }
 
 .display {display: none;}
 
 .white {color: #FFF; background-color: #7a7e80;}
 
-#content-imgs {margin: 20px 25px;float: left;width:950px;height:400px;overflow:hidden;position:relative;}
+#content-imgs {margin: 20px 0;float: left;width:950px;height:400px;overflow:hidden;position:relative;}
 #content-imgs img {border:0;width: 950px;height: 400px;}
 #content-imgs ul{width: 100%;height: 100%;position:absolute;}
 #content-imgs ul li{float:left;width: 950px;height: 400px;overflow:hidden;position:relative;background:#000;}
@@ -151,7 +167,7 @@ a {
 
 #content-info {
   float: left;
-  margin: 0 25px;
+  margin-bottom: 20px;
 }
 
 #content-company {
@@ -159,7 +175,8 @@ a {
   float: left;
 }
 
-#content-company h2:after {
+#content-company h2:after,
+#content-product h2:after {
   background: transparent url('../images/more.gif') no-repeat 0 0;
   content: "";
   display: block;
@@ -206,4 +223,48 @@ a {
 
 #content-product {
   float: left;
+  width: 100%;
+}
+
+#product-ctrl {
+  height: 20px;
+}
+
+#product {
+  float: left;
+  width: 100%;
+}
+
+#product img {
+  width: 180px;
+  height: 150px;
+}
+
+#product div {
+  float: left;
+  margin: 10px 23px;
+}
+
+#product h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#product a {
+  color: blue;
+  font-size: 12pt;
+  font-weight: 100;
+}
+
+#footer {
+  margin: 20px 0 10px 0;
+  float: left;
+  width: 100%;
+}
+
+#footer > p,
+#footer > p > a {
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
 }
