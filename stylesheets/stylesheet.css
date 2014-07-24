@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,8 +30,14 @@ a {
 }
 
 #header {
+  height: 110px;
+  background: url(../images/header-bg.png) repeat-x;
   padding-top: 20px;
   border-bottom: solid 1px #275da1;
+}
+
+#header div:first-child {
+  height: 55px;
 }
 
 #header h1 {
@@ -43,16 +49,15 @@ a {
 
 .inner {
   position: relative;
-  left: 20px;
+  text-indent: 2em;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
 .menu {
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   position: relative;
-  height: 30px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .menu > ul {
@@ -63,6 +68,7 @@ a {
 
 .menu > ul > li {
   float: left;
+  height: 100%;
   width: 100px;
   border-left: 1px solid #FFF;
 }
