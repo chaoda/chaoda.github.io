@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	/**
+	 * 导航栏
+	 * */
+	$(".menu>ul>li").mouseover(function() {
+		if ($(this).find(".childcontent") != null) {
+			$(this).find(".childcontent").removeClass("display");
+			$(this).find("a:first").addClass("white");
+		}
+	});
+	
+	$(".menu>ul>li").mouseleave(function() {
+		if ($(this).find(".childcontent") != null) {
+			$(this).find(".childcontent").addClass("display");
+			$(this).find("a:first").removeClass("white");
+		}
+	});
+};
