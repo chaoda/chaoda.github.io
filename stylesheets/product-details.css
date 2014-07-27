@@ -1,0 +1,22 @@
+@IMPORT url("base.css");
+
+#content-wrapper {
+  padding: 50px 25px 0 25px;
+  background-color: #FFFFFF;
+  float: left;
+  width: 100%;
+}
+
+#imgDiv {
+  float: left;
+}
+
+#imgDiv img {
+  height: 450px;
+  width: 450px;
+}
+
+#infoDiv {
+  float: left;
+  padding: 20px 100px;
+}

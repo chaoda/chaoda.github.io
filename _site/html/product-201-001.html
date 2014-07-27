@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="edge" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/product-details.css" media="screen" />
+</head>
+<body>
+<div id="content-wrapper">
+	<div id="imgDiv">
+		<img src="../images/product/1268463037_558687281.jpg"/>
+	</div>
+	<div id="infoDiv">
+		<h3>产品名称：<span>购物车</span></h3>
+		<h3>产品规格：<span>XXXX</span></h3>
+	</div>
+</div>
+<script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../javascripts/products.js"></script>
+<script type="text/javascript">
+	$(window.parent.document).find("#iframe").load(function(){
+		var main = $(window.parent.document).find("#iframe");
+		var thisheight = $(document).height()+30;
+		main.height(thisheight);
+	});
+</script>
+</body>
+</html>
