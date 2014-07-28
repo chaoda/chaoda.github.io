@@ -1,22 +1,68 @@
 @IMPORT url("base.css");
 
 #content-wrapper {
-  padding: 50px 25px 0 25px;
+  padding: 20px 25px 0 25px;
   background-color: #FFFFFF;
   float: left;
   width: 100%;
 }
 
+#typeNav {
+  width: 100%;
+  padding-bottom: 20px;	
+}
+
+#typeNav a {
+  text-align: left;
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#typeNav a:HOVER {
+  color: #fb5a29;
+}
+
 #imgDiv {
   float: left;
+  height: 250px;
+  width: 250px;
 }
 
 #imgDiv img {
-  height: 450px;
-  width: 450px;
+  height: 250px;
+  width: 250px;
 }
 
 #infoDiv {
   float: left;
-  padding: 20px 100px;
+  padding: 0 50px;
+}
+
+#infoDiv p {
+  font-size: 14pt;
+  line-height: 35px;
+}
+
+#infoDiv p > span {
+  width: 100px;
+  display: block;
+  float: left;
+  text-align: right;
+}
+
+#detailsDiv {
+  width: 100%;
+  float: left;
+  padding: 30px 0 50px;
+}
+
+#detailsDiv h3 {
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+#detailsDiv p {
+  font-size: 14pt;
+  line-height: 35px;
 }

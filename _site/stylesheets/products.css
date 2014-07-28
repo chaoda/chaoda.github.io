@@ -7,9 +7,6 @@
 }
 
 #content-wrapper > div {
-  
-  
-  
   padding: 0 25px;
 }
 
@@ -61,4 +58,14 @@
   height: 150px;
   width: 150px;
   text-align: center;
+}
+
+#typeNav {
+  width: 100%;
+  padding-bottom: 20px;	
+}
+
+#typeNav a {
+  text-align: left;
+  display: inline;
 }
