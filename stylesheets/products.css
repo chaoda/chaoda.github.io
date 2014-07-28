@@ -1,0 +1,71 @@
+@IMPORT url("base.css");
+
+#content-wrapper {
+  background-color: #FFFFFF;
+  float: left;
+  width: 100%;
+}
+
+#content-wrapper > div {
+  padding: 0 25px;
+}
+
+#product-type {
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}
+
+#product-type > div {
+  display: block;
+  float: left
+}
+
+.width25 {
+  width: 23%;
+}
+
+.vertical-separator {
+  margin: 0 20px 20px 0;
+}
+
+.separator {
+  margin: 0 20px 20px 0;
+}
+
+.product-block {
+  text-align: center;
+  padding: 12px 24px;
+  border: 1px solid #e5e5e5;
+}
+
+#product-type h3 {
+  margin: 0 0 10px 0;
+}
+
+#product-type a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#product-type a:HOVER {
+  color: #fb5a29;
+}
+
+#product-type img {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
+#typeNav {
+  width: 100%;
+  padding-bottom: 20px;	
+}
+
+#typeNav a {
+  text-align: left;
+  display: inline;
+}

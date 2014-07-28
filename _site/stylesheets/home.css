@@ -1,0 +1,109 @@
+@IMPORT url("base.css");
+
+#content-wrapper {
+  background-color: #FFFFFF;
+  padding: 0 25px;
+  float: left;
+}
+
+#content-imgs {margin: 20px 0;float: left;width:950px;height:400px;overflow:hidden;position:relative;}
+#content-imgs img {border:0;width: 950px;height: 400px;}
+#content-imgs ul{width: 100%;height: 100%;position:absolute;}
+#content-imgs ul li{float:left;width: 950px;height: 400px;overflow:hidden;position:relative;background:#000;}
+#content-imgs ul li div{position:absolute;overflow:hidden;}
+#content-imgs .btnBg{position:absolute;width:950px;height:20px;left:0;bottom:0;background:#000;}
+#content-imgs .btn{position:absolute;width:780px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
+#content-imgs .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
+#content-imgs .btn span.on{background:#fff;}
+#content-imgs .pre{left:0;}
+#content-imgs .next{right:0;background-position:right top;}
+
+#content-info {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#content-company {
+  width: 75%;
+  float: left;
+}
+
+#content-company h2:after,
+#content-product h2:after {
+  background: transparent url('../images/more.gif') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 13px;
+  width: 38px;
+  float: right;
+  margin-top: 5px;
+}
+
+#content-company div {
+  margin: 15px 10px 0 0;
+  line-height: 18px;
+}
+
+#content-company div:before {
+  background: transparent url('../images/company.jpg') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 160px;
+  width: 300px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+#content-company div p {
+  text-indent: 2em;
+}
+
+#content-other {
+  float: right;
+  width: 18%;
+}
+
+#content-other div {
+  margin: 15px 10px 0 0;
+  line-height: 18pt;	
+}
+
+#content-other > div a {
+  color: blue;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+#content-product {
+  float: left;
+}
+
+#product-ctrl {
+  height: 20px;
+}
+
+#product {
+  float: left;
+  width: 100%;
+}
+
+#product img {
+  width: 180px;
+  height: 150px;
+}
+
+#product div {
+  float: left;
+  margin: 10px 23px;
+}
+
+#product h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#product a {
+  color: blue;
+  font-size: 12pt;
+  font-weight: 100;
+}

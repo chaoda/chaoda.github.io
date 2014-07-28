@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="edge" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/products.css" media="screen" />
+</head>
+<body>
+<div id="content-wrapper">
+	<div>
+		<div id="product-type">
+			<div id="typeNav"><a href="javascript: void(0);" onclick="javascript: menu('html/products.html')">产品类别</a></div>
+			<div class="width25 vertical-separator">
+				<div class="product-block">
+					<h3><a href="javascript: void(0);" onclick="javascript: menu('html/product-201.html')">手推车类</a></h3>
+					<a><img src="../images/product/1268463037_558687281.jpg"/></a>
+				</div>
+			</div>
+			<div class="width25 vertical-separator">
+				<div class="product-block">
+						<h3><a href="javascript: void(0);" onclick="javascript: menu('html/product-202.html')">货架配件类</a></h3>
+						<a><img src="../images/product/3b50db.jpg"/></a>
+				</div>
+			</div>
+			<div class="width25 vertical-separator">
+				<div class="product-block">
+						<h3><a href="javascript: void(0);" onclick="javascript: menu('html/product-203.html')">网篮类</a></h3>
+						<a><img src="../images/product/192267467_558687281.jpg"/></a>
+				</div>
+			</div>
+			<div class="width25">
+				<div class="product-block">
+						<h3><a href="javascript: void(0);" onclick="javascript: menu('html/product-204.html')">双线挂钩类</a></h3>
+						<a><img src="../images/product/558687281.jpg"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../javascripts/products.js"></script>
+<script type="text/javascript">
+	$(window.parent.document).find("#iframe").load(function(){
+		var main = $(window.parent.document).find("#iframe");
+		var thisheight = $(document).height()+30;
+		main.height(thisheight);
+	});
+	
+	// 切换菜单
+	function menu(menuURL) {
+		$(window.parent.document).find("#iframe").attr("src", menuURL);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="edge" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/product-details.css" media="screen" />
+</head>
+<body>
+<div id="content-wrapper">
+	<div id="typeNav">
+		<a href="javascript: void(0);" onclick="javascript: menu('html/products.html')">产品类别</a>
+		&nbsp;>>&nbsp;
+		<a href="javascript: void(0);" onclick="javascript: menu('html/product-201.html')">手推车类</a>
+		&nbsp;>>&nbsp;
+		<a href="javascript: void(0);" onclick="javascript: menu('html/product-201-001.html')">物流车</a>
+	</div>
+	<div id="imgDiv">
+		<img src="../images/product/558687282.jpg"/>
+	</div>
+	<div id="infoDiv">
+		<p><span>产品名称：</span>物流车</p>
+		<p><span>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</span>超达</p>
+		<p><span>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span>600*900*880</p>
+		<p><span>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：</span>运输</p>
+		<p><span>适用场所：</span>医院,超市,便利店,商场,药店,酒店,图书馆</p>
+		<p><span>加工定制：</span>是</p>
+		<p><span>联系方式：</span></p>
+	</div>
+	<div id="detailsDiv">
+		<h3>产品详情</h3>
+		<p>规格是600*900*880</p>
+		<p>产品尺寸大小可以调节。</p>
+		<p>具体价格按照订货数量，可商议。</p>
+		<p>厂家直销，质量保证，价格美丽。</p>
+		<p>欢迎广大客户在我们这里采购。</p>
+	</div>
+</div>
+<script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../javascripts/products.js"></script>
+<script type="text/javascript">
+	$(window.parent.document).find("#iframe").load(function(){
+		var main = $(window.parent.document).find("#iframe");
+		var thisheight = $(document).height()+30;
+		main.height(thisheight);
+	});
+</script>
+</body>
+</html>

@@ -1,22 +1,5 @@
 $(document).ready(function(){
 	/**
-	 * 导航栏
-	 * */
-	$(".menu>ul>li").mouseover(function() {
-		if ($(this).find(".childcontent") != null) {
-			$(this).find(".childcontent").removeClass("display");
-			$(this).find("a:first").addClass("white");
-		}
-	});
-	
-	$(".menu>ul>li").mouseleave(function() {
-		if ($(this).find(".childcontent") != null) {
-			$(this).find(".childcontent").addClass("display");
-			$(this).find("a:first").removeClass("white");
-		}
-	});
-	
-	/**
 	 * 图片轮播
 	 * */
 	var sWidth = $("#content-imgs").width(); //获取焦点图的宽度（显示面积）
@@ -59,6 +42,4 @@ $(document).ready(function(){
 		$("#content-imgs ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
 		$("#content-imgs .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
 	}
-
-
 });
