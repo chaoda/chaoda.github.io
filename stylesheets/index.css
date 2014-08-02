@@ -12,9 +12,9 @@
 }
 
 #header h1 {
-  font-size: 24pt;
-  color: #000000;
-  margin-bottom: 0.2em;
+  font-size: 35px;
+  line-height: 65px;
+  color: #000;
   width: 540px;
 }
 
@@ -49,6 +49,10 @@
 }
 
 .menu > ul > li > a {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
   display: block;
   text-align: center;
 }
@@ -56,6 +60,7 @@
 .menu > ul > li a:HOVER, 
 .menu > ul > li a:ACTIVE {
   color: #FFF;
+  text-decoration: none;
   background-color: #7a7e80;
 }
 
@@ -103,13 +108,14 @@
 }
 
 .childcontent > ul > li a {
-	font-weight: bold;
-	margin-left: 10px;
-	color: #dadada;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #dadada;
 }
 
 .childcontent > ul > li:HOVER {
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .childcontent > ul > li:HOVER > a {
@@ -117,7 +123,7 @@
 }
 
 #footer {
-  margin: 50px 0 10px 0;
+  margin: 20px 0 5px 0;
   float: left;
   width: 100%;
 }
