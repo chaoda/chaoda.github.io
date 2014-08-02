@@ -50,18 +50,7 @@
 	</div>
 </div>
 <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../javascripts/base.js"></script>
 <script type="text/javascript" src="../javascripts/products.js"></script>
-<script type="text/javascript">
-	$(window.parent.document).find("#iframe").load(function(){
-		var main = $(window.parent.document).find("#iframe");
-		var thisheight = $(document).height()+30;
-		main.height(thisheight);
-	});
-	
-	// 切换菜单
-	function menu(menuURL) {
-		$(window.parent.document).find("#iframe").attr("src", menuURL);
-	}
-</script>
 </body>
 </html>

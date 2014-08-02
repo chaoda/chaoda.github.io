@@ -1,0 +1,38 @@
+@IMPORT url("base.css");
+
+#content-wrapper {
+  background-color: #FFFFFF;
+  padding: 0 25px;
+  float: left;
+}
+
+#company {
+  margin: 20px 0;
+  font-size: 20pt;
+  line-height: 30pt;
+  font-weight: bold;
+  background-color: #E4D7D7;
+}
+
+#company-info:BEFORE {
+  background: transparent url('../images/company.jpg') no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 160px;
+  width: 300px;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+#company-info {
+  margin-top: 20px;
+}
+
+#company-info p {
+  display: block;
+  font-size: 14pt;
+  font-weight: normal;
+  line-height: 25pt;
+  text-indent: 2em;
+}
+

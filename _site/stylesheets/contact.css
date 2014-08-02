@@ -1,0 +1,7 @@
+@IMPORT url("base.css");
+
+#content-wrapper {
+  background-color: #FFFFFF;
+  padding: 0 25px;
+  float: left;
+}
