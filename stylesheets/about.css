@@ -36,3 +36,61 @@
   text-indent: 2em;
 }
 
+#idea {
+  margin: 20px 0;
+  font-size: 20pt;
+  line-height: 30pt;
+  font-weight: bold;
+  background-color: #E4D7D7;
+}
+
+#idea p {
+  display: -webkit-inline-box;
+  text-indent: 2em;
+  font-size: 12pt;
+  line-height: 15pt;
+  color: #AD2CB3;
+}
+
+#idea-info {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#idea-info div {
+  float: left;
+  margin-left: 260px;
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 14pt;
+  margin-bottom: 10px;
+}
+
+#idea-info div > p {
+  font-weight:normal;
+  display: -webkit-inline-box;
+  text-indent: 2em;
+}
+
+#idea-info2 {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#idea-info2 div {
+  float: left;
+  width: 25%;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+#idea-info2 div > p {
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+#idea-info2 div > p:FIRST-CHILD {
+  margin-top: 10px;
+}
