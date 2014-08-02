@@ -27,3 +27,9 @@ $(window.parent.document).find("#iframe").load(function(){
 function menu(menuURL) {
 	$(window.parent.document).find("#iframe").attr("src", menuURL);
 }
+
+function menu(menuURL, menuID) {
+	$(window.parent.document).find("#iframe").attr("src", menuURL);
+	$(window.parent.document).find(".menuClick").removeClass("menuClick");
+	$(window.parent.document).find("#" + menuID + "").addClass("menuClick");
+}
