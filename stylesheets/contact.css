@@ -11,7 +11,7 @@
 
 #address p {
   font-weight:normal;
-  display: -webkit-inline-box;
+  display: inline-block;
   text-indent: 2em;
 }
 
@@ -22,6 +22,6 @@
 
 #link p {
   font-weight:normal;
-  display: -webkit-inline-box;
+  display: inline-block;
   text-indent: 2em;
 }
