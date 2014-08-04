@@ -34,7 +34,7 @@
   font-size:13px;
   font-weight:normal;
   line-height: 13px;
-  display: -webkit-inline-box;
+  display: inline-block;
   text-indent: 2em;
 }
 

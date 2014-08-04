@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -63,7 +63,7 @@ a:HOVER {
 }
 
 .title p {
-  display: -webkit-inline-box;
+  display: inline-block;
   text-indent: 2em;
   font-size: 13px;
   line-height: 13px;
