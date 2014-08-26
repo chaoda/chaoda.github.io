@@ -28,6 +28,11 @@ function menu(menuURL) {
 	$(window.parent.document).find("#iframe").attr("src", menuURL);
 }
 
+function menu(menuURL, height) {
+	$(window.parent.document).find("#iframe").attr("src", menuURL);
+	$(window.parent.document).find("#iframe").attr("height", height);
+}
+
 function menu(menuURL, menuID) {
 	$(window.parent.document).find("#iframe").attr("src", menuURL);
 	$(window.parent.document).find(".menuClick").removeClass("menuClick");
