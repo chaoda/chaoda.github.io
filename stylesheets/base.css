@@ -28,7 +28,7 @@ iframe body {
 /* 	height: 100%; */
 }
 
-#content-wrapper {background-color: #FFFFFF;float: left;margin-top: 10px;}
+#content-wrapper {background-color: #FFFFFF;float: left;margin-top: 10px;width: 100%;}
 
 a {
   color: blue;
