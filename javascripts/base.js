@@ -9,7 +9,7 @@ $(window.parent.document).find("#iframe").load(function(){
 	/**
 	 * 浏览器高度
 	 * */
-	var _thisheight = $(window.parent).height() - 135 -38; 
+	var _thisheight = $(window.parent).height() - 252; 
 	/**
 	 * 指定 iframe 高度
 	 * */
@@ -26,11 +26,6 @@ $(window.parent.document).find("#iframe").load(function(){
  * */
 function menu(menuURL) {
 	$(window.parent.document).find("#iframe").attr("src", menuURL);
-}
-
-function menu(menuURL, height) {
-	$(window.parent.document).find("#iframe").attr("src", menuURL);
-	$(window.parent.document).find("#iframe").attr("height", height);
 }
 
 function menu(menuURL, menuID) {
