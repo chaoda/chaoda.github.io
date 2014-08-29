@@ -1,66 +1,10 @@
 @IMPORT url("base.css");
-
-#company:BEFORE {
-  background: transparent url('../images/company.jpg') no-repeat 0 0;
-  content: "";
-  display: block;
-  height: 160px;
-  width: 300px;
-  float: left;
-  margin: 0 20px 10px 0;
-}
-
-#company {
-  margin-top: 10px;
-  height: 160px;
-}
-
-#idea {
-  float: left;
-  margin-bottom: 10px;
-}
-
-#idea div {
-  color: #116DCA;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 15px;
-  margin-bottom: 10px;
-  margin: 8px 0 10px 310px;
-}
-
-#idea div > p {
-  color: #000;
-  font-size:13px;
-  font-weight:normal;
-  line-height: 13px;
-  display: inline-block;
-  text-indent: 2em;
-}
-
-#idea-info {
-  float: left;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-#idea-info div {
-  color: #116DCA;
-  float: left;
-  width: 25%;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 15px;
-  text-align: center;
-}
-
-#idea-info div > p {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 20px;
-  color: #000;
-}
-
-#idea-info div > p:FIRST-CHILD {
-  margin-top: 10px;
-}
+#company:BEFORE {background: transparent url('../images/company.jpg') no-repeat 0 0;content: "";display: block;height: 160px;width: 300px;float: left;margin: 0 20px 10px 0;}
+#company {margin: 10px 0 10px 0;height: 160px;}
+#idea {float: left;margin-bottom: 10px;}
+#idea div {color: #116DCA;font-size: 15px;font-weight: bold;line-height: 15px;margin-bottom: 10px;margin: 8px 0 10px 310px;}
+#idea div > p {color: #000;font-size:13px;font-weight:normal;line-height: 13px;display: inline-block;text-indent: 2em;}
+#idea-info {float: left;width: 100%;margin-bottom: 10px;}
+#idea-info div {color: #116DCA;float: left;width: 25%;font-size: 15px;font-weight: bold;line-height: 15px;text-align: center;}
+#idea-info div > p {font-size: 13px;font-weight: normal;line-height: 20px;color: #000;}
+#idea-info div > p:FIRST-CHILD {margin-top: 10px;}

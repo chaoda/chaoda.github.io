@@ -23,6 +23,6 @@ $(document).ready(function(){
 /**
  * 切换菜单
  * */
-function menu(menuURL) {
-	$("#iframe").attr("src", menuURL);
-}
+//function menu(menuURL) {
+//	$("#iframe").attr("src", menuURL);
+//}

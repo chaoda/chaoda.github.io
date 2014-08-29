@@ -1,27 +1,9 @@
 @IMPORT url("base.css");
-
-#address {
-  text-indent: 2em;
-  line-height: 20px;
-}
-
-#address div {
-  line-height: 35px;
-}
-
-#address p {
-  font-weight:normal;
-  display: -webkit-inline-box;
-  text-indent: 2em;
-}
-
-#link {
-  text-indent: 2em;
-  margin-bottom: 20px;
-}
-
-#link p {
-  font-weight:normal;
-  display: -webkit-inline-box;
-  text-indent: 2em;
-}
+#addressLink{width: 100%;float: left;}
+#address {line-height: 20px;width: 75%;float: left;}
+#addressinfo{margin-top: 10px;}
+#address p {padding-left:10px;width: 100%;font-size: 13px;}
+#link {margin-bottom: 20px;width: 20%;float: right;}
+#linkinfo{margin-top: 10px;}
+#linkinfo ul li {margin-left: 20px;}
+#allmap{width: 100%;float: left;height: 400px;margin-top: 10px;}
